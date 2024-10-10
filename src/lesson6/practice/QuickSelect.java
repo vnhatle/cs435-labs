@@ -3,8 +3,16 @@ package lesson6.practice;
 public class QuickSelect {
 
     public static void main(String [] args) {
+        // Find 3rd element
         int [] array = new int[] {5, 9, 4, 2, 10};
         System.out.println(quickSelect(array, 0, 4, 3));
+
+        // Find 2nd largest element
+        int ith = 5 - 2 + 1;
+        System.out.println(quickSelect(new int [] {3,2,1,5,6,4}, 0, 5, ith));
+        // Find 4th largest element
+        ith = 8 - 4 + 1;
+        System.out.println(quickSelect(new int [] {3,2,3,1,2,4,5,5,6}, 0, 8, ith));
     }
 
     static int quickSelect(int [] array, int start, int stop, int k) {
